@@ -1,0 +1,67 @@
+@include desktop
+    .download
+
+        &__wrap
+            max-width: 950px
+            margin: 0 auto 123px auto
+
+
+@include laptop
+    .download
+
+        &__wrap
+            padding-right: 0
+
+        &__img
+            margin-right: 18px
+        
+
+@include tablet
+    .download
+
+        &__wrap
+            max-width: 550px
+            flex-direction: column
+
+        &__img
+            margin: 0 auto
+
+
+        &__right-block
+            margin: 0 auto
+            padding-top: 74px
+
+
+
+@include mobile
+     .download
+
+        &__wrap
+            max-width: 500px
+            margin-bottom: 70px
+
+        &__img
+            max-width: 500px
+
+
+@include smartMobile
+    .download
+        
+        &__img
+            max-width: 420px
+
+
+@include smallMobile
+    .download
+
+        &__wrap
+            max-width: 290px
+
+        &__img
+            max-width: 290px
+
+        &__btn
+            width: 220px
+            margin-right: 0
+            &:first-child
+                margin-bottom: 15px

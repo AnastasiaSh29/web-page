@@ -1,0 +1,132 @@
+@include desktop
+    .feedback
+
+        .slider
+            max-width: 950px
+
+            &__img
+                width: 577px
+
+            &__text-block
+                max-width: 323px
+
+            .back-pre
+                left: 820px
+
+            .back-nxt
+                left: 900px
+
+
+@include laptop
+    .feedback
+
+        &__wrapper
+            padding-top: 100px
+
+        .slider
+            max-width: 850px
+
+            &__img
+                width: 477px
+
+            &__text-block
+                max-width: 300px
+
+            .back-pre
+                left: 720px
+
+            .back-nxt
+                left: 800px
+                
+
+
+        
+
+@include tablet
+    .feedback
+
+        .slider
+            max-width: 550px
+            display: block
+
+            &__img
+                width: 550px
+
+            &__text-block
+                max-width: 577px
+                margin: 0 auto 0 100px
+                padding-top: 50px
+
+            &__quotes
+                margin: 0 auto 43px 0
+
+            .back-pre
+                left: 420px
+                top: 765px
+
+            .back-nxt
+                left: 500px
+                top: 765px
+
+
+
+@include mobile
+    .feedback
+
+        .slider
+
+            &__text-block
+                margin: 0 auto 0 50px
+
+
+            .back-pre
+                left: 390px
+                top: 765px
+
+            .back-nxt
+                left:475px
+                top: 765px
+
+@include smartMobile
+    .feedback
+
+        .slider
+            max-width: 425px
+            margin: 0 auto
+
+            &__img
+                width: 425px
+
+            &__text-block
+                max-width: 290px
+                margin: 0 auto
+                padding-top: 30px
+
+            .back-pre
+                left: 200px
+
+            .back-nxt
+                left: 280px
+
+@include smallMobile
+    .feedback
+
+        &__wrapper
+            margin-bottom: 230px
+
+        .slider
+            max-width: 290px
+
+            &__img
+                width: 290px
+
+            &__quotes
+                margin: 0 auto 43px 0
+
+            .back-pre
+                left: 120px
+                top: 845px
+
+            .back-nxt
+                left: 200px
+                top: 845px

@@ -1,0 +1,150 @@
+@include desktop
+    .whatWeDo
+
+        .dots-one
+            right: 70px
+
+        .dots-two
+            right: 70px
+
+        .dots-three
+            right: 940px
+
+
+
+@include laptop
+    .whatWeDo
+
+        .dots-three
+            right: 770px 
+
+        &__wrap
+            max-width: 750px
+
+        &__block
+            padding-left: 45px
+
+        .card
+            width: 320px
+
+        
+        
+@include tablet
+    .whatWeDo
+
+        .decor-br
+            top: 2060px
+            left: 0
+
+        .decor-bl
+            top: 150px
+            right: 0
+
+        .dots-one
+            right: 115px
+            top: 235px
+
+        .dots-two
+            right: 115px
+            top: 2050px
+
+        .dots-three
+            right: 530px
+            top: 1180px
+
+
+        &__wrap
+            max-width: 550px
+            margin: 0 auto 130px auto
+            display: block
+            padding: 100px 0 0 0
+
+        &__block
+            margin: 0 auto 13px auto
+            padding-left: 0
+
+
+
+        &__header
+            max-width: 395px
+            text-align: center
+            margin: 0 auto 70px auto
+
+
+        .card
+            width: 380px
+            margin: 0 auto 70px auto
+            &:last-of-type
+                margin: 0 auto 70px auto
+
+
+@include mobile
+    .whatWeDo
+
+
+        .decor-br
+            top: 2078px
+            z-index: -1
+
+        .decor-bl
+            top: 220px
+            z-index: -1
+
+        .dots-one
+            right: 10px
+            top: 275px
+
+        .dots-two
+            right: 10px
+            top: 2105px
+
+        .dots-three
+            right: 380px
+            top: 1230px
+
+        &__wrap
+            max-width: 350px
+            margin: 0 auto 100px auto
+
+
+        &__header
+            margin: 0 auto 70px auto
+
+
+@include smartMobile
+    .whatWeDo
+
+        .card
+            max-width: 350px
+
+
+@include smallMobile
+    .whatWeDo
+
+
+        .decor-br
+            top: 2155px
+
+        .decor-bl
+            top: 250px
+
+
+        .dots-two
+            right: 10px
+            top: 2175px
+
+        .dots-three
+            display: none
+
+        &__wrap
+            max-width: 290px
+
+
+        &__header
+            margin: 0 auto 70px auto
+
+        .card
+            max-width: 300px
+
+            &__text
+                max-width: 260px

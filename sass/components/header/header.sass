@@ -1,0 +1,33 @@
+.header
+    background-color: $colorTop
+    border-top: $borderTransparent
+   
+
+    &__wrap
+        @extend %basicDisplay
+        max-width: 950px
+        margin: 0 auto
+        padding-top: 45px
+
+    &__logo
+        width: 128px
+
+
+    .menu
+        display: flex
+        list-style: none
+        padding: 16px 0
+
+        &__li
+            margin-right: 50px
+            
+            &:last-of-type
+                margin-right: 0
+
+        &__link
+            text-decoration: none
+            color: $font-secondary-color
+            &--active
+                color: $accent-color
+
+                

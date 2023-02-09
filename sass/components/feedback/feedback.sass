@@ -1,0 +1,104 @@
+.feedback
+    position: relative
+    border-top: $borderTransparent
+
+    &__wrapper
+        padding-top: 150px
+        margin-bottom: 158px
+
+
+    .dots-four
+        @extend %dotsDecor
+        top: 250px
+        right: 0
+
+    .feedback__header
+        color: $font-secondary-color
+        font-size: 26px
+        font-weight: 700
+        line-height: 27px
+        letter-spacing: 0em
+        text-align: center
+        margin: 0 0 31px 0
+
+
+    .slider
+        @extend %basicDisplay
+        margin: 0 auto 0 0
+        position: relative
+        z-index: 99
+        width: 1195px
+        height: 100%
+            
+
+        &__img
+            width: 677px
+            height: 519px
+            margin: 0 auto 0 0
+            background-image: url(../images/Paulina.jpg)
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+
+
+
+        &__text-block
+            max-width: 418px
+            color: $font-secondary-color
+            text-align: left
+            padding-top: 200px
+
+
+        &__quotes
+            width: 50px
+            height: 44px
+            margin: 0 auto 43px 0
+            background-image: url(../images/quotes.svg)
+            
+
+
+        &__text    
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: 0em
+            opacity: 0.5
+            margin: 0 0 40px 0
+
+
+        &__name
+            font-size: 18px
+            font-weight: 500
+            line-height: 19px
+            letter-spacing: 0em
+            margin: 0
+            
+
+        .back-pre
+            @extend %back-pre-btns
+            background-color: $accent-color
+            left: 1067px
+            &:active 
+                @extend %btnsActive
+                    
+
+            .pre
+                @extend %pre-next
+                border-color: $white-color
+                transform: rotate(45deg)
+                left: 40%
+
+
+        .back-nxt
+            @extend %back-pre-btns
+            background-color: $white-color
+            left: 1150px
+            &:active 
+                @extend %btnsActive
+
+                   
+            .nxt 
+                @extend %pre-next
+                border-color: $accent-color
+                transform: rotate(-135deg)
+                right: 40%

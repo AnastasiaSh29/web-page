@@ -1,0 +1,137 @@
+.footer
+    background-color: $accent-color
+    margin: 0 auto 21px auto
+    color: $white-color
+
+    &__wrap-top
+        max-width: 1195px
+        margin: 0 auto 28px auto
+        padding-top: 55px
+        border-top: 1px solid transparent
+        @extend %basicDisplay 
+        
+
+    &__wrap-info
+        display: flex
+            
+
+    &__logo
+        margin-right: 145px
+
+
+    &__lists
+        margin-right: 60px
+        white-space: nowrap
+
+
+    &__list-header
+        display: inline
+        border-bottom: 2px solid $white-color
+        padding-bottom: 3px
+        margin-bottom: 34px
+        font-size: 18px
+        font-weight: 500
+        line-height: 19px
+        letter-spacing: 0em
+        text-align: left
+
+
+    &__list
+        list-style-type: none
+        padding: 20px 0 0 0
+        margin: 0
+        font-size: 14px
+        font-weight: 400
+        line-height: 14px
+        letter-spacing: 0em
+        text-align: left
+
+    &__item
+        margin-bottom: 18px
+        &:last-of-type
+            margin-bottom: 0
+
+
+
+    &__form-text
+        max-width: 364px
+        font-size: 18px
+        font-weight: 400
+        line-height: 26px
+        letter-spacing: 0em
+        text-align: left
+        margin: 0 0 20px 0
+
+
+            
+    .form
+
+
+        &__email
+            width: 268px
+            height: 50px
+            border: none
+            border-radius: 3px
+            box-sizing: border-box
+            font-size: 14px
+            font-weight: 400
+            line-height: 14px
+            letter-spacing: 0em
+            text-align: left
+            padding: 18px 0 18px 10px
+            margin-right: 10px
+            cursor: pointer
+            &:focus 
+                outline-color: $accent-color
+
+        &__btn
+            width: 116px
+            height: 50px
+            border: none
+            border-radius: 3px
+            background-color: $white-color
+            color: $accent-color
+            padding: 0
+            font-size: 16px
+            font-weight: 700
+            line-height: 17px
+            letter-spacing: 0em
+            text-align: center
+            cursor: pointer
+            &:active 
+                @extend %btnsActive
+
+
+    &__border
+        border-top: 2px solid $white-color
+
+
+    &__social-wrap
+        @extend %basicDisplay
+        max-width: 1195px
+        margin: 0 auto
+        padding-top: 23px
+
+    &__social-text
+        font-size: 10px
+        font-weight: 400
+        line-height: 16px
+        letter-spacing: 0em
+        text-align: left
+        margin: 0 0  23px 0
+
+
+    &__social-list
+        display: flex
+        margin: 0 0 21px 0
+        list-style-type: none
+        padding: 0
+
+    &__social-item
+        margin-right: 25px
+        &:active 
+            @extend %btnsActive
+
+        &:last-of-type
+            margin-right: 0
+

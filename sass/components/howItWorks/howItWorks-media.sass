@@ -1,0 +1,36 @@
+@include tablet
+    .howItWorks__blocks
+        max-width: 550px
+
+    .block
+        margin-right: 15px
+        &:last-of-type
+            margin-right: 0
+
+        &__header
+            white-space: nowrap
+
+
+@include mobile
+    .howItWorks
+        padding-bottom: 1px
+
+        &__blocks
+            max-width: 350px
+            display: block
+            margin-bottom: 95px
+            
+        .block
+            margin: 0 0 95px 0
+            &:last-of-type
+                margin-bottom: 0
+            
+
+            &__text
+                margin: 0
+
+
+
+@include smallMobile
+    .howItWorks__blocks
+        max-width: 290px

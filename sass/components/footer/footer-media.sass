@@ -1,0 +1,141 @@
+@include desktop
+    .footer
+
+        &__wrap-top
+            max-width: 950px
+
+        &__logo
+            margin-right: 60px
+
+        &__lists
+            margin-right: 30px
+
+        &__form-text
+            text-align: right
+
+        .form
+            text-align: right
+
+            &__email
+                margin: 0 0 20px auto
+
+        &__social-wrap
+            max-width: 950px
+
+
+
+@include laptop
+    .footer
+
+        &__wrap-top
+            max-width: 850px
+
+        &__form-text
+            text-align: left
+
+        .form__email
+            width: 253px
+
+        &__social-wrap
+            max-width: 850px
+
+
+
+@include tablet
+    .footer
+
+        &__wrap-top
+            max-width: 550px
+            display: block
+            margin: 0 auto
+
+        &__wrap-info
+            margin-bottom: 55px
+
+        &__logo
+            margin-right: 270px
+
+        &__lists
+            margin-right: 20px
+            &:last-child
+                margin-right: 0
+
+        &__form
+            max-width: 400px
+            margin: 0 auto
+
+        .form
+            text-align: left 
+
+            &__email
+                width: 268px
+
+        &__social-wrap
+            max-width: 550px
+
+
+
+@include mobile
+    .footer
+
+        &__wrap-top
+            max-width: 500px
+
+        &__wrap-info
+            flex-wrap: wrap
+            justify-content: space-between
+
+        &__logo
+            margin: 0 auto 50px 0
+            padding-right: 350px
+
+        &__social-wrap
+            max-width: 500px
+
+
+@include smartMobile
+    .footer
+
+        &__wrap-top
+            max-width: 400px
+
+        &__logo
+            padding-right: 200px
+
+        &__social-wrap
+            max-width: 400px
+
+
+
+    
+@include smallMobile
+    .footer
+
+        &__wrap-top
+            max-width: 290px
+
+        &__wrap-info
+            flex-wrap: wrap
+            justify-content: flex-start
+
+        &__logo
+            margin: 0 auto 50px 0
+            padding-right: 180px
+
+        &__list
+            margin-bottom: 20px
+                
+
+        .form
+            text-align: right
+
+            &__email
+                margin: 0 22px 20px auto
+
+            &__btn
+                margin: 0 22px 20px auto
+
+        &__social-wrap
+            display: block
+            max-width: 290px
+            padding-bottom: 1px

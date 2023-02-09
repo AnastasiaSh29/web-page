@@ -1,0 +1,128 @@
+.whatWeDo
+    margin: 0
+    position: relative
+    z-index: 99
+
+    .decor-br
+        background-image: url('/images/rectangleG3.png')
+        @extend %decor-bl-br
+        top: 1320px
+        left: 0
+
+    .decor-bl
+        background-image: url('/images/rectangleG2.png')
+        @extend %decor-bl-br
+        top: 0
+        right: 0
+
+
+    .dots-one
+        @extend %dotsDecor
+        top: 75px
+        right: 170px
+
+    
+    .dots-two
+        @extend %dotsDecor
+        top: 1330px
+        right: 170px
+
+
+    .dots-three
+        @extend %dotsDecor
+        top: 690px
+        right: 1050px
+
+
+    &__wrap
+        @extend %basicDisplay
+        max-width: 950px
+        margin: 0 auto
+        padding-top: 150px
+         
+        
+    &__block
+        max-width: 475px
+        margin-bottom: 113px
+        padding-left: 95px
+        &:first-of-type
+            margin-bottom: 0
+
+    &__header
+        max-width: 395px
+        font-size: 36px
+        font-weight: 500
+        line-height: 46px
+        letter-spacing: 0.05em
+        text-align: left
+        margin: 0 auto 170px 0
+            
+            
+    .card
+        width: 380px
+        border-radius: 10px
+        box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2)
+        margin: 0 0 113px auto
+        padding-top: 48px
+        display: flex
+        flex-direction: column
+        background-color: $white-color
+        &:last-of-type
+            margin: 0 0 0 auto
+              
+
+        &__img
+            width: 223px
+            margin: 0 auto 56px auto
+                 
+
+        &__header
+            color: $font-secondary-color
+            font-size: 20px
+            font-weight: 500
+            line-height: 30px
+            letter-spacing: 0.02em
+            text-align: left
+            margin: 0 auto 16px 48px
+
+
+        &__text
+            max-width: 284px
+            color: $font-secondary-color
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            letter-spacing: 0em
+            text-align: left
+            opacity: 0.6
+            margin: 0 auto 62px auto
+
+
+        &__bottom
+            display: flex
+                
+
+        &__link
+            text-decoration: none
+            color: $accent-color
+            font-size: 14px
+            font-weight: 500
+            line-height: 30px
+            letter-spacing: 0.05em
+            text-align: left
+            margin: 0 16px 48px 48px
+
+        &__arrow
+            background-image: url('/images/Arrow.svg')
+            background-size: contain
+            background-position: center
+            background-repeat: no-repeat
+            border: none
+            background-color: transparent
+            width: 16px
+            margin: 0 0 50px 0
+            cursor: pointer
+            &:active
+                @extend %btnsActive
+
+
